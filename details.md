@@ -7,7 +7,7 @@ order: 40
 
 This page provides some technical details of how penguinTrace is constructed.
 The main intention of penguinTrace is helping to provide a way to better
-understand how programs run at a low level. The developement was also used as
+understand how programs run at a low level. The development was also used as
 an opportunity to better understand details of how programs run, interactions
 with the Linux kernel and how debuggers work.
 

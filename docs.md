@@ -1,11 +1,10 @@
 ---
-layout: page
+layout: docs
 title: Documentation
 permalink: /docs/
-#order: 30
+order: 30
 ---
 
-Full documentation is TBD, currently `README.md` in the [repository][repo]
-provides the most detailed information.
-
-[repo]: https://github.com/penguintrace/penguintrace
+These pages give a few more details about the helper programs that are part
+of penguinTrace, as well as more details on the command line options to
+configure the server.

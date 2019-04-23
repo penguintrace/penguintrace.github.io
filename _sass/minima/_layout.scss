@@ -261,3 +261,18 @@
     }
   }
 }
+
+
+/**
+ * Docs
+ */
+.post {
+  ul.docs {
+    li {
+      list-style: none;
+    }
+    li.active {
+      font-style: italic;
+    }
+  }
+}

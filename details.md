@@ -54,7 +54,11 @@ order to interact with the child process that has been created.
 The Linux kernel (and the processor that it is running on) have the ability to
 'single step' through instructions, and once the instruction has been stepped
 the process is paused until the next step is requested. This is the mode in
-which penguinTrace usually controls the child process.
+which penguinTrace usually controls the child process. At a lower level, this
+is implemented by the processor supporting a feature where at the end of
+executing an instruction an interrupt is raised which returns control to the
+operations system. This is the [Trap Flag][trapflag] on x86_64 or
+[single stepping][singlestep] on AArch64.
 
 The `ptrace` system call also allows the parent process (in this case
 penguinTrace) to read both the registers and the memory of the traced process.
@@ -82,3 +86,5 @@ can be used to extract the value from the child process.
 [clang]: https://clang.llvm.org/
 [ptrace]: https://en.wikipedia.org/wiki/Ptrace
 [dwarf]: http://dwarfstd.org/
+[trapflag]: https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture#EFLAGS_Register
+[singlestep]: http://infocenter.arm.com/help/topic/com.arm.doc.den0024a/ch18s01s01.html

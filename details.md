@@ -43,7 +43,7 @@ order to show them more clearly in the UI.
 Then the compiler binary is called directly with the provided source code. Once
 the binary is compiled, the source code and configuration are added into new
 sections in the binary to create a self-contained binary that can be used to
-recreate the same session.
+recreate the same session when uploaded.
 
 #### Tracing
 

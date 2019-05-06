@@ -25,6 +25,7 @@ command-line.
 | `CXX_COMPILER_BIN`  | String   | Path to the C++ compiler                   |
 | `CLANG_BIN`         | String   | Path to clang (for libclang)               |
 | `OBJCOPY_BIN`       | String   | Path to objcopy                            |
+| `LIB_DIRS`          | String   | List of directories to make available to child processes when sandboxed (colon separated) |
 | `SERVER_PORT`       | Integer  | Port to listen on                          |
 | `DELETE_TEMP_FILES` | Boolean  | Delete temporary files when a session ends |
 | `SERVER_GLOBAL`     | Boolean  | Listen on all addresses, rather than just loopback |
